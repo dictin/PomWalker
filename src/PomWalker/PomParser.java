@@ -108,7 +108,7 @@ public class PomParser {
 			    		+ dependency.getVersion() +","+modDate+","
 				        + parent+","
 				        + m.getGroupId()+","+m.getArtifactId()+","+m.getVersion()+","
-				        + dependency.getGroupId() + " , " + "  , " + dependency.getScope()+" , "+fp);
+				        + dependency.getGroupId() + " , " + " , " + dependency.getScope()+" , "+fp);
 			    		pomContents.append("\n");
 			    	
 			}
