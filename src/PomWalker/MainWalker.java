@@ -14,15 +14,13 @@ public class MainWalker {
 		
 		//Environment Variables
 		final String scanlog = "indexPom";
-		final String repo = "/opt/maven/";
-		//final String repo = "/opt/dmg/pom/";
-		//final String repo = "C:\\\\Users\\Raula\\Documents\\maven";
+		final String repo = "C:\\Users\\Propriétaire\\.m2";
 		final String outF = "outputPom.csv";
 		
         MainWalker pomWalk = new MainWalker();
         ReadWriter rw = new ReadWriter(scanlog);
         pomWalk.scan(rw,scanlog,repo);
-        pomWalk.extractPom(rw,outF,arti,arVer);
+        pomWalk.extractPom(rw,outF);
 		
     }
 
@@ -35,7 +33,7 @@ public class MainWalker {
         System.out.println("Walked POM files - "+rw.countLine());
 	}
 	
-	private void extractPom(ReadWriter rw, String outFile, String art, String artID) {
+	private void extractPom(ReadWriter rw, String outFile) {
 		
         int totalPoms= rw.countLine();
         ReadWriter outF = new ReadWriter(outFile);

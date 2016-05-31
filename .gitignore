@@ -18,6 +18,10 @@ local.properties
 
 # External tool builders
 .externalToolBuilders/
+/indexPom
+/outputPom.csv
+/outputPom.xlsx
+
 
 # Locally stored "Eclipse launch configurations"
 *.launch
